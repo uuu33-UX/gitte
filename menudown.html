@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style type="">
+        button{
+            display: block;
+            border: 2px double aqua;
+            background: blueviolet;
+            color: white;
+            width: 180px;
+            height: 50px;
+            margin: 100px auto;
+        }
+
+    </style>
+    请输入一个三位数：<input type="number" value=""> <button onclick="www()">拆分</button>
+
+
+    <div>
+        <ul>
+            <li onclick="fun(1)">src1</li>
+            <li onclick="fun(2)">src1</li>
+        </ul>
+    </div>
+
+
+    <div>
+        <iframe src="./2.html" id="nei" frameborder="0"
+            style="position: fixed; left: 500px; width: 30px; height: 30px;"></iframe>
+    </div>
+
+
+
+    </body>
+    <script>
+        // function fun(type) {
+        //     if (type = 1) {
+        //         var divElement = document.getElementById("nei");
+
+        //         divElement.src = "https://www.php.cn/faq/560791.html";
+        //     } else {
+        //         divElement.src = "./2.html";
+        //     }
+        // }
+
+
+        // function www() {
+        //     var a = prompt("请输入一个整数");
+        //     if (parseInt(a) % 2 == 0) {
+        //         alert("偶数");
+        //     } else {
+        //         alert("非偶数");
+        //     }
+        // }
+        function www() {
+            var a = document.getElementsByTagName("input")[0].value;
+            //  console.log(a);
+
+
+            console.log("个位数" + (a % 10));;
+            // System.out.println("The tens place is");
+            // System.out.println((i/10)%10);
+            console.log("十位数" + Math.floor(((a / 10) % 10)));;
+            // System.out.println("The hundreds place is");
+            // System.out.println(i/100);
+            console.log("百位数" + Math.floor((a / 100)));;
+
+
+
+
+        }
+
+
+
+        //confirm("222");
+
+
+
+        // for (let i = 100; i < 1000; i++) {
+        //     let sum = 0;
+        //     let temp = i;
+        //     while (temp > 0) {
+        //         let digit = temp % 10;
+        //         sum += Math.pow(digit, 3);
+        //         // console.log(sum);
+        //         temp = Math.floor(temp / 10);
+        //     }
+        //     if (sum === i) {
+        //         console.log(i);
+        //     }
+        // }
+
+        // function fn(n) {
+        //     if (n < 3) {
+        //         return 1;
+        //     }
+        //     return fn(n - 1) + fn(n - 2)
+        // }
+        // fn(3);
+        // function fn(n) {
+        //     var L1 = 1; L2 = 1, tem = 0;
+        //     for (var i = 3; i <= n; i++) {
+        //         tem = L1 + L2;
+        //         L1 = L2;
+        //         L2 = tem;
+
+        //     }
+        //     return L2;
+        // }
+
+
+    </script>
+
+</html>
